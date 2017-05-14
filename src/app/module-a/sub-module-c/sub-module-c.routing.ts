@@ -1,28 +1,29 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from './app.component';
+import { SubModuleCComponent } from './sub-module-c.component';
 
 
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: SubModuleCComponent,
     children: [
       {
-        path: '',
-        loadChildren: 'app/module-a/module-a.module#ModuleAModule'
+        path: ':id',
+        loadChildren: 'app/module-a/sub-module-c/detailc/detail-c.module#DetailCModule',
       }
     ]
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
   // TODO check if we need to provide resolvers
   providers: []
 })
 
 
-export class AppRoutingModule { }
+export class SubModuleCRoutingModule { }
+
 
