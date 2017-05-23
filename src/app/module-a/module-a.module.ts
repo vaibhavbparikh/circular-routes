@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { ModuleARoutingModule } from './module-a.routing';
+import { ModuleARoutingModule } from '../routing/module-a.routing';
 import { ModuleAComponent } from './module-a.component';
 
 @NgModule({

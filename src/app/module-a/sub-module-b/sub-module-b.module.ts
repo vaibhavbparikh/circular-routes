@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { SubModuleBComponent } from './sub-module-b.component';
-import { SubModuleBRoutingModule } from './sub-module-b.routing';
+import { SubModuleBRoutingModule } from '../../routing/sub-module-b.routing';
 
 
 @NgModule({

@@ -11,6 +11,7 @@ export class ModuleAComponent implements OnInit {
   constructor(private router: Router) { }
 
   ngOnInit() {
+
   }
 
   loadModuleB() {
